@@ -1,0 +1,20 @@
+<!--<div (window:keydown.arrowDown)="prevItem()" (window:keydown.arrowUp)="nextItem()" class="time-machine">-->
+<div *ngIf="glasspane" class="glasspane"></div>
+<div class="container">
+  <div class="time-machine">
+    <!--<div class="items" [ngStyle]="getItemsStyle()">-->
+    <div class="items">
+      <ul>
+        <li state *ngFor="let item of items;let ix=index" class="history-item" (click)="moveToItem(ix)"
+            [ngStyle]="getHistoryItemStyle(ix)">
+          <ng-container *ngTemplateOutlet="panel; context: {$implicit: item, index: ix}"></ng-container>
+        </li>
+      </ul>
+    </div>
+    <div class="navigation" [ngStyle]="getNavigationStyle()">
+      <i class="fa fa-chevron-circle-up fa-2x" (click)="nextItem()"></i>
+      <i class="fa fa-chevron-circle-down fa-2x" (click)="prevItem()"></i>
+      <i class="fa fa-adjust fa-2x" (click)="toggleGlasspane()"></i>
+    </div>
+  </div>
+</div>

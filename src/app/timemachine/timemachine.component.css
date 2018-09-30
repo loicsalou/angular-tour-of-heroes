@@ -1,0 +1,55 @@
+div.glasspane {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff7f;
+}
+
+div.container {
+  position: fixed;
+  top: 40vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+div.time-machine {
+  display: flex;
+  margin: auto auto;
+  width: 550px;
+  height: 300px;
+}
+
+div.items {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  perspective: 550px;
+  perspective-origin: 50% 50%;
+  position: absolute;
+}
+
+li {
+  border: thin solid yellow;
+  outline: 1px solid lightgray;
+  transition: all .5s ease-in-out;
+  transition-delay: 0ms;
+  transition-duration: 500ms;
+}
+
+li.history-item {
+  background: white;
+  left: 25px;
+  list-style-type: none;
+  position: absolute;
+}
+
+div.navigation {
+  z-index: 100;
+}
+
+div.navigation > i {
+  display: block;
+}
