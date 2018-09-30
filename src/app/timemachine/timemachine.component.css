@@ -19,15 +19,12 @@ div.container {
 div.time-machine {
   display: flex;
   margin: auto auto;
-  width: 550px;
-  height: 300px;
+  /*width: 550px;*/
+  /*height: 300px;*/
 }
 
 div.items {
   text-align: center;
-  margin: 0 auto 0 auto;
-  perspective: 550px;
-  perspective-origin: 50% 50%;
   position: absolute;
 }
 

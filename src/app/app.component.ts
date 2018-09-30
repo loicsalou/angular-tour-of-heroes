@@ -12,7 +12,7 @@ import {Component, TemplateRef, ViewChild} from '@angular/core';
                <!--<router-outlet></router-outlet>-->
                <div class="container">
                  <my-timemachine [items]="texts" [panel]="panelTemplateRef" [glasspane]="true"
-                                 [height]="350" [width]="600">
+                                 [height]="450" [width]="900">
                  </my-timemachine>
                  <ng-template #myPanel let-item let-index="index">
                    <div style="color: red; padding: 10px;">

@@ -70,10 +70,16 @@ export class TimemachineComponent implements OnInit, AfterViewInit {
     };
   }
 
+  getTimeMachineStyle() {
+    return {
+      'width': this.width + 'px',
+      'height': this.height + 'px'
+    };
+  }
+
   getItemsStyle() {
     return {
-      'perspective': this.height + 'px',
-      'perspective-origin': 'bottom center'
+      'perspective': this.width + 'px'
     };
   }
 
