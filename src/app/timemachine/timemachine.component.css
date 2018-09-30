@@ -19,8 +19,6 @@ div.container {
 div.time-machine {
   display: flex;
   margin: auto auto;
-  /*width: 550px;*/
-  /*height: 300px;*/
 }
 
 div.items {
@@ -31,7 +29,7 @@ div.items {
 li {
   border: thin solid yellow;
   outline: 1px solid lightgray;
-  transition: all .5s ease-in-out;
+  transition: all .5s linear;
   transition-delay: 0ms;
   transition-duration: 500ms;
 }

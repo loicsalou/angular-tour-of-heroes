@@ -36,11 +36,13 @@ export class TimemachineComponent implements OnInit, AfterViewInit {
   constructor() {
   }
 
-  @HostListener('window:keydown.arrowUp') next() {
+  @HostListener('window:keydown.arrowUp', ['$event']) next(event: KeyboardEvent) {
+    event.preventDefault();
     this.nextItem();
   }
 
-  @HostListener('window:keydown.arrowDown') prev() {
+  @HostListener('window:keydown.arrowDown', ['$event']) prev(event: KeyboardEvent) {
+    event.preventDefault();
     this.prevItem();
   }
 

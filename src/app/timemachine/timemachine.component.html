@@ -1,9 +1,7 @@
-<!--<div (window:keydown.arrowDown)="prevItem()" (window:keydown.arrowUp)="nextItem()" class="time-machine">-->
 <div *ngIf="glasspane" class="glasspane"></div>
 <div class="container">
   <div class="time-machine" [ngStyle]="getTimeMachineStyle()">
     <div class="items" [ngStyle]="getItemsStyle()">
-    <!--<div class="items">-->
       <ul>
         <li state *ngFor="let item of items;let ix=index" class="history-item" (click)="moveToItem(ix)"
             [ngStyle]="getHistoryItemStyle(ix)">
