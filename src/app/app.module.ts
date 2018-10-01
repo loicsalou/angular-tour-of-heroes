@@ -1,5 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {CUSTOM_ELEMENTS_SCHEMA, NgModule, NO_ERRORS_SCHEMA} from '@angular/core';
+import {NgModule, NO_ERRORS_SCHEMA} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
